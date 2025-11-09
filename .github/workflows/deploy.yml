@@ -1,0 +1,61 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 20 * * *'
+
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v6.0.0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4.2.0
+
+      - name: Installing project dependencies
+        run: pnpm install
+
+      - name: Build
+        run:
+          pnpm build
+        env:
+          S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
+          S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+          S3_ENDPOINT: ${{ vars.S3_ENDPOINT }}
+          S3_BUCKET_NAME: ${{ vars.S3_BUCKET_NAME }}
+          S3_CUSTOM_DOMAIN: ${{ vars.S3_CUSTOM_DOMAIN }}
+          BUILDER_REPO_URL: ${{ vars.BUILDER_REPO_URL }}
+          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
+
+      - name: Deploy 🚀
+      #   uses: JamesIves/github-pages-deploy-action@v4
+      #   with:
+      #     branch: deploy
+      #     folder: apps/web/dist/
+      #     clean: true
+      #     single-commit: true
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GIT_TOKEN }}
+          action: "upload"
+          app_location: "apps/web/dist/" # location of your client code
+          output_location: "" # location of client code build output
+          skip_app_build: true
+          skip_api_build: true
