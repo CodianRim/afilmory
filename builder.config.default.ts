@@ -6,7 +6,7 @@ import { env } from './env.js'
 
 export default defineBuilderConfig(() => ({
   repo: {
-    enable: false,
+    enable: true,
     url: process.env.BUILDER_REPO_URL ?? '',
     token: env.GIT_TOKEN,
   },

@@ -1,13 +1,13 @@
 {
-  "name": "Innei's Afilmory",
-  "title": "Innei's Afilmory",
-  "description": "Capturing beautiful moments in life, documenting daily warmth and emotions through my lens.",
-  "url": "https://afilmory.innei.in/",
+  "name": "Young's Gallery",
+  "title": "Young's Gallery",
+  "description": "",
+  "url": "https://gallery.sponge.eu.org/",
   "accentColor": "#007bff",
   "author": {
-    "name": "Innei",
-    "url": "https://innei.in/",
-    "avatar": "https://cdn.jsdelivr.net/gh/Innei/static@master/avatar.png"
+    "name": "Young",
+    "url": "https://sponge.eu.org/",
+    "avatar": "https://www.gravatar.com/avatar/deeeb9bb765c2168379eecff1bb16ccf2e594db4212f2a965af0b138e9af093b?d=identicon"
   },
   "map": [
     "maplibre"
