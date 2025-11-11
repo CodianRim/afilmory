@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:exif="https://afilmory.com/rss/exif/1.1">
+  <channel>
+    <title><![CDATA[Young's Gallery]]></title>
+    <link>https://gallery.sponge.eu.org/</link>
+    <description><![CDATA[]]></description>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 16 Aug 2025 09:12:19 GMT</lastBuildDate>
+    <pubDate>Tue, 11 Nov 2025 20:29:43 GMT</pubDate>
+    <ttl>60</ttl>
+    <copyright>Copyright Young</copyright>
+    
+    <!-- Afilmory RSS EXIF Extension Protocol Metadata -->
+    <exif:version>1.1</exif:version>
+    <exif:protocol>afilmory-rss-exif</exif:protocol>
+
+    <atom:link href="https://gallery.sponge.eu.org//feed.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>Young</managingEditor>
+    <webMaster>Young</webMaster>
+    <generator>Afilmory RSS Generator</generator>
+    <image>
+      <url>https://www.gravatar.com/avatar/deeeb9bb765c2168379eecff1bb16ccf2e594db4212f2a965af0b138e9af093b?d=identicon</url>
+      <title><![CDATA[Young's Gallery]]></title>
+      <link>https://gallery.sponge.eu.org/</link>
+    </image>
+    <item>
+      <title><![CDATA[Z63 1172]]></title>
+      <link>https://gallery.sponge.eu.org/Z63_1172</link>
+      <guid isPermaLink="true">https://gallery.sponge.eu.org/Z63_1172</guid>
+      <description><![CDATA[Z63 1172 | Tags: 2025, 甘肃]]></description>
+      <pubDate>Sat, 16 Aug 2025 09:12:19 GMT</pubDate>
+      <category><![CDATA[2025]]></category>
+      <category><![CDATA[甘肃]]></category>
+      <enclosure url="https://gallery.sponge.eu.org/thumbnails/Z63_1172.jpg" type="image/jpeg" length="9038525" />
+      <exif:aperture>f/8</exif:aperture>
+      <exif:shutterSpeed>1/250s</exif:shutterSpeed>
+      <exif:iso>100</exif:iso>
+      <exif:exposureCompensation>0 EV</exif:exposureCompensation>
+      <exif:imageWidth>5987</exif:imageWidth>
+      <exif:imageHeight>3991</exif:imageHeight>
+      <exif:dateTaken>2025-08-16T09:12:19.000Z</exif:dateTaken>
+      <exif:camera><![CDATA[NIKON CORPORATION NIKON Z6_3]]></exif:camera>
+      <exif:lens><![CDATA[NIKKOR Z 24-120mm f/4 S]]></exif:lens>
+      <exif:focalLength>39mm</exif:focalLength>
+      <exif:focalLength35mm>39mm</exif:focalLength35mm>
+      <exif:whiteBalance>Auto</exif:whiteBalance>
+      <exif:meteringMode>Multi-segment</exif:meteringMode>
+      <exif:flashMode>Off</exif:flashMode>
+      <exif:colorSpace>sRGB</exif:colorSpace>
+      <exif:exposureProgram>Aperture-priority AE</exif:exposureProgram>
+      <exif:sceneMode><![CDATA[Standard]]></exif:sceneMode>
+      <exif:lightValue>14</exif:lightValue>
+    </item>
+  </channel>
+</rss>
